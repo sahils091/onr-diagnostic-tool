@@ -1,0 +1,40 @@
+@import "../../partials/variables";
+@import "../../partials/mixins";
+@import "../../partials/typography";
+.header {
+  margin: 0;
+  height: 45px;
+  background-color: $accent-one;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: white;
+    box-shadow: 0 8px 6px -6px black;
+    z-index: -1;
+  }
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    width: 37%;
+  }
+  &__icon-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    border-left: 1px solid white;
+  }
+  &__left {
+    width: 25%;
+  }
+  &__login-detail {
+    font-weight: 200;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-left: 5rem;
+    font-weight: 600;
+  }
+}

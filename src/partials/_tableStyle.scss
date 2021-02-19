@@ -1,0 +1,73 @@
+// Used in WarehouseInfoRow, InventoryItem components
+
+.table {
+  &__label {
+    margin: 16px 0 0 0;
+    font-weight: 600;
+    color: $label-color;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__entry {
+    width: 140px;
+
+    @include tablet {
+      width: auto;
+    }
+
+    &--toItem {
+      @include tablet {
+        width: 28%;
+      }
+
+      @include desktop {
+        width: 25%;
+      }
+    }
+
+    &--status {
+      @include tablet {
+        width: 30%;
+      }
+
+      @include desktop {
+        width: 29%;
+      }
+    }
+
+    &--category {
+      @include tablet {
+        width: 20%;
+      }
+    }
+
+    &--qty {
+      @include tablet {
+        width: 22%;
+      }
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 14px;
+
+    @include tablet {
+      width: 10%;
+      padding: 0;
+    }
+
+    @include desktop {
+      width: 6%;
+    }
+
+    &--edit {
+      padding-top: 6px;
+    }
+  }
+}
