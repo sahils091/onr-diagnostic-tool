@@ -6,6 +6,8 @@ const Header = () => {
     <div className="header">
       <div className="header__wrapper">
         <div className="header__left">
+          <div className="sidebar__top"></div>
+
           <p className="header__title">Diagnostic Tool</p>
         </div>
         <div className="header__right">

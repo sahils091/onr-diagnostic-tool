@@ -1,0 +1,9 @@
+@import "../../partials/variables";
+@import "../../partials/mixins";
+@import "../../partials/typography";
+
+.homepage {
+   &__main{
+       display: flex;
+   }
+}

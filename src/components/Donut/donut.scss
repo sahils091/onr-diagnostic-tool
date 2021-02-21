@@ -1,0 +1,37 @@
+@import "../../partials/variables";
+@import "../../partials/mixins";
+@import "../../partials/typography";
+
+.donut {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  &__chart-wrapper {
+    border: 0.0625rem solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    width: 140px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    &:active {
+      background-color: #bdf8ff;
+      border: 1px solid $accent-one;
+      box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+      transform: translateY(3px);
+    }
+    &:hover {
+      background-color: #bdf8ff;
+      border: 1px solid $accent-one;
+      box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &__chart-title {
+    color: $accent-one;
+  }
+}

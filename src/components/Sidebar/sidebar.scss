@@ -1,0 +1,38 @@
+@import "../../partials/variables";
+@import "../../partials/mixins";
+@import "../../partials/typography";
+
+.sidebar {
+  background-color: $accent-two;
+  height: 53.125rem ;
+  width: 2.8125rem;
+  
+  color: white;
+  &__top {
+    height: 2.8125rem;
+  }
+
+  &__icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  &__icon {
+    height: 3.75rem;
+    width: 100%;
+    padding-top: 1rem;
+    border-top: 0.0625rem solid black;
+    cursor: pointer;
+    &--last {
+      border-bottom: 0.0625rem solid black;
+    }
+
+    &:hover {
+      background-color: #002d55;
+    }
+  }
+  &__top{
+    background-color: $accent-two;
+    width: 2.8125rem;
+}
+}

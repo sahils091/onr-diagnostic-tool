@@ -12,18 +12,22 @@
     height: 100%;
     color: white;
     box-shadow: 0 8px 6px -6px black;
-    z-index: -1;
   }
   &__right {
     display: flex;
     justify-content: space-between;
     width: 37%;
   }
+  &__left {
+      display: flex;
+      align-items: center;
+  }
   &__icon-wrapper {
     display: flex;
     justify-content: space-evenly;
     width: 50%;
     border-left: 1px solid white;
+    cursor: pointer;
   }
   &__left {
     width: 25%;
@@ -34,7 +38,9 @@
 
   &__title {
     margin-top: 0;
-    margin-left: 5rem;
+    margin-left: 3rem;
     font-weight: 600;
   }
+
+
 }
