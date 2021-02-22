@@ -4,9 +4,9 @@
 
 .sidebar {
   background-color: $accent-two;
-  height: 53.125rem ;
+  height: 53.125rem;
   width: 2.8125rem;
-  
+
   color: white;
   &__top {
     height: 2.8125rem;
@@ -31,8 +31,12 @@
       background-color: #002d55;
     }
   }
-  &__top{
+  &__top {
+    display: none;
     background-color: $accent-two;
     width: 2.8125rem;
-}
+    @include tablet {
+      display: block;
+    }
+  }
 }

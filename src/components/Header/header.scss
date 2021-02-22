@@ -3,44 +3,70 @@
 @import "../../partials/typography";
 .header {
   margin: 0;
-  height: 45px;
   background-color: $accent-one;
+  @include tablet {
+    height: 2.8125rem;
+  }
+
   &__wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     height: 100%;
-    color: white;
+    color: $main-bg;
     box-shadow: 0 8px 6px -6px black;
+    padding-bottom: 1rem;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 0;
+    }
   }
   &__right {
     display: flex;
     justify-content: space-between;
-    width: 37%;
+    padding-left: 1rem;
+    @include tablet {
+      width: 37%;
+      padding-left: 0;
+    }
   }
   &__left {
-      display: flex;
-      align-items: center;
+    display: flex;
+    align-items: center;
   }
   &__icon-wrapper {
     display: flex;
     justify-content: space-evenly;
     width: 50%;
-    border-left: 1px solid white;
+    border-left: 1px solid $main-bg;
     cursor: pointer;
   }
   &__left {
-    width: 25%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $main-bg;
+
+    @include tablet {
+      width: 25%;
+      justify-content: flex-start;
+      border-bottom: none;
+      margin-bottom: 0;
+    }
   }
   &__login-detail {
     font-weight: 200;
   }
 
   &__title {
-    margin-top: 0;
-    margin-left: 3rem;
     font-weight: 600;
+    padding-top: 1rem;
+    @include tablet {
+      margin-top: 0;
+      margin-left: 3rem;
+      padding-top: 0;
+    }
   }
-
-
 }

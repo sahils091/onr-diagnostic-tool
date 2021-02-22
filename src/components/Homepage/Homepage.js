@@ -8,7 +8,6 @@ const Homepage = () => {
   return (
     <div className="homepage">
       <Header />
-
       <section className="homepage__main">
         <Sidebar />
         <Dashboard />
