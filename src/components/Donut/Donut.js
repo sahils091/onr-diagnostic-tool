@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import Chart from "react-apexcharts";
 import "./donut.scss";
 import uuid from "react-uuid";
+import { Link } from "react-router-dom";
 
 const Donut = () => {
-  const [gaugeData, setGaugeData] = useState([
+  const [gaugeData] = useState([
     {
       name: "Quality Score",
       score: 72,
@@ -48,11 +49,15 @@ const Donut = () => {
       id: 6,
     },
   ]);
-
   return (
     <div className="donut">
       {gaugeData.map((i) => {
         return (
+          <Link 
+          to={"/" + i.name}
+          key={uuid()}
+          className="donut__link"
+          >
           <div className="donut__chart-wrapper" key={uuid()}>
             <p className="donut__chart-title" key={uuid()}>
               {i.name}
@@ -72,6 +77,7 @@ const Donut = () => {
               Sample: {i.sample}
             </p>
           </div>
+          </Link>
         );
       })}
     </div>

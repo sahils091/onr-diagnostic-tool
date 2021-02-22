@@ -7,12 +7,12 @@
   width: 100%;
   &__title-wrapper {
     margin-top: 2rem;
-    padding-left: 9rem;
+    padding-left: 4rem;
   }
   &__subtitle-wrapper {
     width: 100%;
     background-color: $label-color;
-    padding-left: 9rem;
+    padding-left: 4rem;
   }
   &__subtitle {
     font-weight: 300;
@@ -25,9 +25,9 @@
     width: 100%;
   }
   &__detail-left {
-    width: 50%;
+    width: 44%;
   }
   &__detail-right {
-    width: 50%;
+    width: 56%;
   }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import Areachart from "../Areachart/Areachart";
 import Piechart from "../Piechart.js/Piechart";
 import "./dashboard.scss";
 
@@ -20,7 +21,10 @@ const Dashboard = () => {
         <div className="dashboard__detail-left">
           <Piechart />
         </div>
-        <div className="dashboard__detail-right"></div>
+        <div className="dashboard__detail-right">
+        <Areachart/>
+
+        </div>
       </section>
     </div>
   );

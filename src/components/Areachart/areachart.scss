@@ -1,0 +1,50 @@
+@import "../../partials/variables";
+@import "../../partials/mixins";
+@import "../../partials/typography";
+
+.areachart {
+  margin-top: 3rem;
+  padding-right: 3rem;
+  &__wrapper {
+    display: flex;
+    margin-bottom: 4rem;
+  }
+
+  &__title-wrapper {
+    margin-right: 1rem;
+  }
+
+  &__title {
+    font-weight: 300;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__btn {
+    border: none;
+    height: 2rem;
+    margin-left: 8px;
+    background-color: $accent-one;
+    color: white;
+    cursor: pointer;
+    &:active {
+      background-color: $accent-two;
+
+      box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+      transform: translateY(3px);
+    }
+    &:hover {
+      background-color: $accent-two;
+      box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease-in-out;
+    }
+    &--day {
+      background-color: $accent-three;
+    }
+    &--month {
+      background-color: $accent-two;
+    }
+  }
+}
