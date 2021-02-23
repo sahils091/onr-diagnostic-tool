@@ -31,8 +31,15 @@
       border: 1px solid $accent-one;
       box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
       transform: translateY(3px);
+      transition: all 0.3s ease-in-out;
     }
     &:hover {
+      background-color: $accent-three;
+      border: 1px solid $accent-one;
+      box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+      
+    }
+    &:focus {
       background-color: $accent-three;
       border: 1px solid $accent-one;
       box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
@@ -42,4 +49,5 @@
   &__chart-title {
     color: $accent-one;
   }
+  
 }
