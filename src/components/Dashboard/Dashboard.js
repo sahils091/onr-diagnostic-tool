@@ -16,14 +16,16 @@ const Dashboard = () => {
           </span>
           Diagnostic Tool{" "}
         </h2>
+        <p className="dashboard__icon--tack">
+          <i className="fas fa-thumbtack"></i>
+        </p>
       </div>
       <section className="dashboard__detail-wrapper">
         <div className="dashboard__detail-left">
           <Piechart />
         </div>
         <div className="dashboard__detail-right">
-        <Areachart/>
-
+          <Areachart />
         </div>
       </section>
     </div>

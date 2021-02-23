@@ -9,7 +9,7 @@
     padding-right: 1rem;
   }
   @include desktop {
-      padding-right: 3rem;
+    padding-right: 3rem;
   }
 
   &__wrapper {
@@ -20,13 +20,12 @@
     padding-right: 2rem;
 
     @include tablet {
-     
-      margin-bottom: 2rem;
+      margin-bottom: 6rem;
       padding-left: 0rem;
       padding-right: 0rem;
     }
     @include desktop {
-      margin-bottom: 4rem;
+      margin-bottom: 8rem;
       flex-direction: row;
     }
   }
@@ -37,7 +36,6 @@
     @include tablet {
       margin-right: 1rem;
       margin-bottom: 1rem;
-      
     }
     @include desktop {
       text-align: left;

@@ -13,12 +13,30 @@
     width: 100%;
     background-color: $label-color;
     padding-left: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
   }
   &__subtitle {
     font-weight: 300;
   }
   &__icon {
+    
     margin-right: 8px;
+    &--tack{
+      display: none;
+  color: $accent-one;
+  font-weight: 200;
+  @include tablet {
+    display: block;
+    margin-right: 2rem;
+  }
+  @include desktop {
+    
+    margin-right: 3rem;
+  }
+    }
   }
   &__detail-wrapper {
     display: flex;
