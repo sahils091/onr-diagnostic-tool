@@ -1,7 +1,7 @@
 import React from "react";
-import Graph from "../../Graph/Graph";
-
 import "./areachart.scss";
+import Graph from "../Graph/Graph";
+
 const Areachart = () => {
   return (
     <div className="areachart">
@@ -20,7 +20,6 @@ const Areachart = () => {
           <button className="areachart__btn">Year</button>
         </div>
       </div>
-
       <div className="areachart__graph-wrapper">
         <Graph />
       </div>

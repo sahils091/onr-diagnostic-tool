@@ -9,6 +9,7 @@
 
   &__link {
     text-decoration: none;
+    color: $accent-one;
     &:visited {
       text-decoration: none;
       color: $accent-one;
@@ -20,11 +21,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 240px;
-    width: 140px;
+    height: 15rem;
+    width: 8.75rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
     border-radius: 0.2rem;
+    color: $accent-one;
     cursor: pointer;
     &:active {
       background-color: $accent-three;
@@ -37,7 +39,6 @@
       background-color: $accent-three;
       border: 1px solid $accent-one;
       box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
-      
     }
     &:focus {
       background-color: $accent-three;
@@ -49,5 +50,7 @@
   &__chart-title {
     color: $accent-one;
   }
-  
+  &__chart-blurb {
+    color: $accent-one;
+  }
 }

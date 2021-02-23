@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {  withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { Line } from "react-chartjs-2";
 import uuid from "react-uuid";
 
@@ -219,7 +219,6 @@ class Graph extends Component {
     this.state.currentData["Quality Score"].map((i) => {
       newData.push(i.score);
       newLabel.push(i.date);
-      console.log(newData, newLabel, `new datas in the Map`);
       filteredData = {
         labels: newLabel,
         datasets: [
@@ -231,7 +230,7 @@ class Graph extends Component {
           },
         ],
       };
-      console.log(filteredData);
+
       return this.setState({
         currentData: filteredData,
       });
@@ -239,9 +238,7 @@ class Graph extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    console.log(prevProps.match.params.name);
     let name = this.props.match.params.name;
-    console.log(name, `HELOOO NEW PARAMS`);
 
     if (prevProps.match.params.name !== this.props.match.params.name) {
       if (!this.props.match.params.name) {
@@ -252,7 +249,7 @@ class Graph extends Component {
         this.state.currentData["Quality Score"].map((i) => {
           newData.push(i.score);
           newLabel.push(i.date);
-          console.log(newData, newLabel, `new datas in component did update`);
+
           filteredData = {
             labels: newLabel,
             datasets: [
@@ -264,7 +261,7 @@ class Graph extends Component {
               },
             ],
           };
-          console.log(filteredData, `in Component Did update`);
+
           return this.setState({
             currentData: filteredData,
           });
@@ -278,11 +275,7 @@ class Graph extends Component {
           i[name].map((element) => {
             newData.push(element.score);
             newLabel.push(element.date);
-            console.log(
-              newData,
-              newLabel,
-              `Absolutely New Data new datas in component did update`
-            );
+
             filteredData = {
               labels: newLabel,
               datasets: [
@@ -294,7 +287,6 @@ class Graph extends Component {
                 },
               ],
             };
-            console.log(filteredData, `in Component Did update`);
             return this.setState({
               currentData: filteredData,
             });

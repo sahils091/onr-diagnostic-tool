@@ -41,7 +41,6 @@ const Donut = () => {
       score: 76,
       vsly: null,
       sample: 133,
-      id: 6,
     },
   ]);
 
