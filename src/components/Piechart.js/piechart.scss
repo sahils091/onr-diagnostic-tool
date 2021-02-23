@@ -3,6 +3,7 @@
 @import "../../partials/typography";
 
 .piechart {
+
   @include tablet {
     padding-left: 1rem;
   }
@@ -19,6 +20,9 @@
     @include tablet {
       display: block;
       margin-top: 3rem;
+      margin-left: 0.5rem;
+    }
+    @include desktop {
       margin-left: 1rem;
     }
   }
@@ -34,6 +38,9 @@
     padding: 0.5rem;
     @include tablet {
       width: 89%;
+    }
+    @include desktop {
+      width: 60%;
     }
   }
   &__filter-key {
