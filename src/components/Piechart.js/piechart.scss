@@ -3,22 +3,38 @@
 @import "../../partials/typography";
 
 .piechart {
-  padding-left: 3rem;
+  @include tablet {
+    padding-left: 1rem;
+  }
+  @include desktop {
+    padding-left: 3rem;
+  }
 
   &__filter {
-    margin-top: 3rem;
-    margin-left: 1rem;
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      display: block;
+      margin-top: 3rem;
+      margin-left: 1rem;
+    }
   }
   &__filter-title {
     margin-bottom: 0.5rem;
   }
 
   &__filter-detail {
-    height: 100px;
-    width: 50%;
+    height: auto;
+
     border: 1px solid black;
     border-radius: 0.3rem;
     padding: 0.5rem;
+    @include tablet {
+      width: 89%;
+    }
   }
   &__filter-key {
     background-color: $accent-one;

@@ -3,15 +3,46 @@
 @import "../../partials/typography";
 
 .areachart {
-  margin-top: 3rem;
-  padding-right: 3rem;
+  margin-top: 1rem;
+  @include tablet {
+    margin-top: 3rem;
+    padding-right: 1rem;
+  }
+  @include desktop {
+      padding-right: 3rem;
+  }
+
   &__wrapper {
     display: flex;
-    margin-bottom: 4rem;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @include tablet {
+     
+      margin-bottom: 2rem;
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+    @include desktop {
+      margin-bottom: 4rem;
+      flex-direction: row;
+    }
   }
 
   &__title-wrapper {
-    margin-right: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    @include tablet {
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      
+    }
+    @include desktop {
+      text-align: left;
+      margin-bottom: 0;
+    }
   }
 
   &__title {
@@ -20,15 +51,24 @@
 
   &__btn-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    margin-bottom: 2rem;
+    @include tablet {
+      flex-direction: row;
+      margin-bottom: 0;
+    }
   }
   &__btn {
     border: none;
     height: 2rem;
-    margin-left: 8px;
+
     background-color: $accent-one;
-    color: white;
+    color: $main-bg;
     cursor: pointer;
+    @include tablet {
+      margin-left: 0.5rem;
+    }
     &:active {
       background-color: $accent-two;
 
@@ -45,6 +85,13 @@
     }
     &--month {
       background-color: $accent-two;
+    }
+  }
+  &__graph-wrapper {
+    display: flex;
+    justify-content: center;
+    @include tablet {
+      display: block;
     }
   }
 }

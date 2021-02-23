@@ -23,11 +23,19 @@
   &__detail-wrapper {
     display: flex;
     width: 100%;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+    }
   }
   &__detail-left {
-    width: 44%;
+    @include tablet {
+      width: 44%;
+    }
   }
   &__detail-right {
-    width: 56%;
+    @include tablet {
+      width: 56%;
+    }
   }
 }

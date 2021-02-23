@@ -4,18 +4,23 @@
 
 .sidebar {
   background-color: $accent-two;
-  height: 53.125rem;
-  width: 2.8125rem;
+  color: $main-bg;
 
-  color: white;
+  @include tablet {
+    
+    width: 2.8125rem;
+  }
+
   &__top {
     height: 2.8125rem;
   }
 
   &__icon-wrapper {
     display: flex;
-    flex-direction: column;
     text-align: center;
+    @include tablet {
+      flex-direction: column;
+    }
   }
   &__icon {
     height: 3.75rem;

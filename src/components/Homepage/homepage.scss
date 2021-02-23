@@ -5,5 +5,9 @@
 .homepage {
    &__main{
        display: flex;
+       flex-direction: column;
+       @include tablet {
+           flex-direction: row;
+       }
    }
 }

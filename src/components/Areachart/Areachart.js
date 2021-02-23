@@ -20,8 +20,10 @@ const Areachart = () => {
           <button className="areachart__btn">Year</button>
         </div>
       </div>
-      <Graph />
-      <div></div>
+
+      <div className="areachart__graph-wrapper">
+        <Graph />
+      </div>
     </div>
   );
 };
